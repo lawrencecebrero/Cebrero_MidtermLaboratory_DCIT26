@@ -1,8 +1,240 @@
-h1 {
-    color: #4ac1f7;
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap');
+
+/* OVERALL*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Stack Sans Headline", sans-serif;
+    text-align: center;
+    box-sizing: border-box;
 }
 
-.mylogo {
-    height: 300px;
-    width: auto;
+body {
+    background-color: #f5f5f5;
+}
+
+/* NAVIGATION BAR */
+
+.navbar {
+    text-align: left;
+}
+
+header {
+    background-color: #7f170e;
+    padding: 1.5rem 2rem;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+    padding: 13px;
+}
+
+header a:hover {
+    background-color: #a21f14;
+    transition: 0.2s;
+}
+
+/* ABOUT PAGE */
+
+.about_text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 0 1rem;
+    color: #333;
+    text-align: justify;
+}
+
+/* BLOG PAGE */
+
+.new-post-button {
+    display: inline-block;
+    background-color: #037f05;
+    padding: 0.5rem 1rem;
+    margin: 10px;
+    font-weight: 400;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.new-post-button:hover {
+    background-color: #016c02;
+    transition: 0.2s;
+}
+
+.post-entry {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem 5rem;
+    box-shadow: rgba(100, 100, 100, 0.1) 0px 5px 10px 0px;
+    border-radius: 8px;
+}
+
+.post-entry a {
+    color: #070707;
+    text-decoration: none;
+}
+
+.post-entry a:hover {
+    color: #303030;
+    transition: 0.2s;
+}
+
+.post-button {
+    display: inline-block;
+    background-color: #03497f;
+    padding: 0.5rem 1rem;
+    margin: 10px;
+    font-weight: 400;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.post-button:hover {
+    background-color: #023c69;
+    transition: 0.2s;
+}
+
+/* FORMS UI */
+
+form {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem 10rem;
+    box-shadow: rgba(100, 100, 100, 0.1) 0px 5px 10px 0px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+form h1 {
+    color: #7f170e;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+form p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #7f170e;
+    background-color: #fff;
+}
+
+form input[type="submit"] {
+    background-color: #037f05;
+    padding: 0.8rem 2rem;
+    margin-top: 1.2rem;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+form input[type="submit"]:hover {
+    background-color: #016c02;
+    transition: 0.2s;
+}
+
+form .cancel-btn {
+    display: inline-block;
+    background-color: #a21f14;
+    padding: 0.8rem 2rem;
+    margin-top: 1.2rem;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+form .cancel-btn:hover {
+    background-color: #7f170e;
+    transition: 0.2s;
+}
+
+form .form-buttons {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* SELECT INPUTS */
+
+form select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+form select:hover {
+    border-color: #7f170e;
+}
+
+form select:focus {
+    outline: none;
+    border-color: #7f170e;
+    background-color: #fff;
+}
+
+form select option {
+    padding: 0.6rem;
+    font-size: 1rem;
+}
+
+/* CANCEL BUTTON */
+.cancel {
+    display: inline-block;
+    background-color: #a21f14;
+    padding: 0.8rem 2.5rem;
+    margin: 10px;
+    font-weight: 600;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.cancel:hover {
+    background-color: #7f170e;
+    transition: 0.2s;
+}
+
+.form-buttons {
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
